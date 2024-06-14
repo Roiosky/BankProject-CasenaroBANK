@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuario</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Asegúrate de tener tu archivo CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdc7d0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .card h2 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div><img src="../img/logo.png" alt=""></div>
+        <h2>Bienvenido a las opciones CRUD como administrador</h2>
+        <p>Por favor seleccione que desea hacer:</p>
+        <div class="button-container">
+            <button onclick="editarPerfil()">Editar Perfil</button>
+            <button onclick="inactivarCuenta()">Inactivar Cuenta</button>
+        </div>
+    </div>
+
+    <script src="js/crud.js"></script> <!-- Asegúrate de tener tu archivo JavaScript -->
+</body>
+</html>

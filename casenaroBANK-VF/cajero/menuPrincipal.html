@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simpler banking experience for a simpler life."
+    />
+    <link rel="shortcut icon" href="./assets/logos/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/logos/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Menu principal</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero__img-box">
+            <img
+              src="./assets/images/cards.png"
+              alt="Cards"
+              class="hero__img"
+            />
+          </div>
+          <div class="hero__textbox">
+            <h1 class="heading-primary mb-sm">
+              A un paso de ver todas tus <span>transacciones</span>
+            </h1>
+            <p class="hero__description mb-md">
+                En la era digital, la modernización de los cajeros automáticos ha transformado la forma en que las personas realizan sus transacciones bancarias. Los cajeros digitalizados, también conocidos como cajeros automáticos inteligentes o ATMs de última generación, ofrecen una serie de facilidades que mejoran la experiencia del usuario y optimizan las operaciones bancarias.
+            </p>
+            <!--a href="registro.html"><button>Registro</button></a>
+            <a href="inicioSesion.html"><button>Inicie Sesión</button></a>
+            <button onclick="verificarContraseña()">Perfil Admin</button>
+            <a href="consultarMovimientos.html"><button>Abonar</button></a>
+            <a href="consultarMovimientos.html"><button>Consultar Movimiento</button></a>-->
+
+            <button class="btn btn--md btn--outline btn--scroll-to">
+              <a href="inicioSesion.html">Iniciar Sesión</a>
+              <svg class="btn__icon">
+                <use
+                  xlink:href=""
+                ></use>
+              </svg>
+            </button>
+
+            <button class="btn btn--md btn--outline btn--scroll-to">
+              <a href="registro.html">Registrarse</a>
+              <svg class="btn__icon">
+                <use
+                  xlink:href=""
+                ></use>
+              </svg>
+            </button>
+
+            <button class="btn btn--md btn--outline btn--scroll-to">
+              <a href="consultarMovimientos.html">Transacciones</a>
+              <svg class="btn__icon">
+                <use
+                  xlink:href=""
+                ></use>
+              </svg>
+            </button>
+            
+            <button class="btn btn--md btn--outline btn--scroll-to">
+              <a onclick="verificarContraseña()">Perfil Asesor</a>
+              <svg class="btn__icon">
+                <use
+                  xlink:href=""
+                ></use>
+              </svg>
+            </button>
+            <!--a class="btn btn--md btn--outline btn--scroll-to" href="consultarMovimientos.html"><button>Consultar Movimiento</button></a-->
+            <!--ESTE ES IMPORTANTE<a href="..//index.html" class="btn btn--normal">Volver</a>-->
+          </div>
+        </div>
+      </section>
+    <div class="overlay hidden"></div>
+    <script>
+      function verificarContraseña() {
+          const contraseña = prompt("Por favor, ingrese la contraseña de administrador:");
+          if (contraseña === "1234") {
+              // Contraseña correcta, redirigir al CRUD
+              window.location.href = "crud.html";
+          } else {
+              // Contraseña incorrecta, mostrar mensaje de error
+              alert("Contraseña incorrecta. Acceso denegado.");
+          }
+      }
+  </script>
+  </body>
+</html>

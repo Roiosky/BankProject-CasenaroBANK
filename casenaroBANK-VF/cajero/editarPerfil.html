@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bdc7d0;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .card h2 {
+            margin-bottom: 20px;
+        }
+        .card input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        .card #mensajeError {
+            color: red;
+            margin-bottom: 10px;
+        }
+        .card #errorClaves {
+            display: none;
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div><img src="../img/logo.png" alt=""></div>
+        <h2>Editar Perfil</h2>
+        <div id="mensajeError"></div>
+        <form id="formularioEditarPerfil">
+            <input type="text" id="id" name="id" placeholder="Identificación"><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono"><br>
+            <input type="text" id="correo" name="correo" placeholder="Correo"><br>
+            <input type="password" id="clave" name="clave" minlength="8" maxlength="12" placeholder="Contraseña (8 Dígitos)"><br>
+            <input type="password" id="claveRepetida" name="claveRepetida" minlength="8" maxlength="12" placeholder="Confirmar Contraseña"><br>
+            <div id="errorClaves">Las contraseñas no coinciden</div>
+            <br>
+            <button type="submit">Guardar Cambios</button>
+        </form>
+        <button onclick="regresarMenuPrincipal()">Salir</button>
+    </div>
+
+    <script src="js/editarPerfil.js"></script> <!-- Asegúrate de tener tu archivo JavaScript -->
+
+    <script>
+        function regresarMenuPrincipal() {
+            window.location.href = "../cajero/menuPrincipal.html";
+        }
+    </script>
+</body>
+</html>
+

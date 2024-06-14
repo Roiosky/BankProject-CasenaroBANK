@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 5 83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_8);
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_8" data-name="Degradado sin nombre 8" x1="2.5" y1="84" x2="2.5" y2="1" gradientTransform="translate(0 84) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#02fb7e" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#00e977"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M5,2.5c0,1.4-1.1,2.5-2.5,2.5S0,3.9,0,2.5,1.1,0,2.5,0s2.5,1.1,2.5,2.5ZM5,15.5c0,1.4-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5,1.1-2.5,2.5-2.5,2.5,1.1,2.5,2.5ZM2.5,31c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5-2.5,1.1-2.5,2.5,1.1,2.5,2.5,2.5ZM5,41.5c0,1.4-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5,1.1-2.5,2.5-2.5,2.5,1.1,2.5,2.5ZM2.5,57c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5-2.5,1.1-2.5,2.5,1.1,2.5,2.5,2.5ZM5,67.5c0,1.4-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5,1.1-2.5,2.5-2.5,2.5,1.1,2.5,2.5ZM2.5,83c1.4,0,2.5-1.1,2.5-2.5s-1.1-2.5-2.5-2.5-2.5,1.1-2.5,2.5,1.1,2.5,2.5,2.5Z"/>
+</svg>

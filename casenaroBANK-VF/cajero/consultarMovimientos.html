@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simpler banking experience for a simpler life."
+    />
+    <link rel="shortcut icon" href="./assets/logos/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/logos/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+
+        <section class="section" id="section-operations">
+          <div class="container">
+            <span class="subheading mb-xs">Realizar Transacciones</span>
+            <h2 class="heading-secondary mb-xl">
+              Lo mejor de lo mejor en tus dispositivos electrónicos.            </h2>
+            </div>
+            <div class="container">
+              <div class="operations">
+                <aside class="operations__img-container">
+                  <figure class="operations__img-box">
+                    <img
+                    src="./assets/images/transfer.jpg"
+                    alt="Transfer money"
+                    class="operations__img operations__img--1 operations__img--active"
+                    />
+                  </figure>
+                </aside>
+                <aside class="operations__list-container">
+                  <div class="operations__accordion">
+                    <h3
+                    class="operations__heading operations__heading--active"
+                    data-accordion="1"
+                    >
+                    Fácil
+                  </h3>
+                </div>
+                <div class="operations__accordion">
+                  <h3 class="operations__heading" data-accordion="2">
+                    Rápido                </h3>
+                  </div>
+                  <div class="operations__accordion">
+                    <h3 class="operations__heading" data-accordion="3">
+                      Seguro                </h3>
+                    </div>
+                    <div style="align-items: center;" class="container">
+                      <!--input  type="number" id="valor" placeholder="Ingrese el monto"-->
+                      <input type="number" id="valor" placeholder="Ingrese el monto" style="color: #0d121e; padding: 14px 20px; border: none; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; width: calc(100% - 36px); box-sizing: border-box; font-size: 16px; max-width: 15ch;">
+                      <button id="abonar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Abonar</button>
+                      <button id="retirar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Retirar</button>
+                      <button id="consultar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Consultar Movimientos</button>
+                      <p id="saldo-value"></p>
+                      <ul id="movimientos-list"></ul>
+                    </div>
+                    <div style="
+                      margin: 50px 306px 50px 313px;">
+                      <button style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;"><a href="..//index.html">Cerrar Sesión</a></button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </section>
+          </main>
+          <div class="overlay hidden"></div>
+          <script src="js/servicios.js"></script>
+        </body>
+        </html>
+        
+        <!--DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/.css">
+    <title>Consultar Movimientos</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #9f9e9e;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="number"], button {
+            font-family: sans-serif;
+            margin: 10px;
+        }
+        p {
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <input type="number" id="valor" placeholder="Ingrese el monto">
+            <button id="abonar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Abonar</button>
+            <button id="retirar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Retirar</button>
+            <button id="consultar-btn" style="background-color: #02fb7e; color: #0d121e; padding: 14px 20px; border: none; border-radius: 4px; cursor: pointer; border-radius: 30px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">Consultar Movimientos</button>
+            <p id="saldo-value"></p>
+            <ul id="movimientos-list"></ul>
+        </div>
+    </main>
+
+    <script src="../cajero/js/servicios.js"></script>
+</body>
+</html-->
